@@ -1,4 +1,8 @@
-# Polymer PackSquash
+# Polymer PackSquash (Fork)
+
+This fork includes fixes for Windows compatibility and modifications to the hashing/cleanup system.
+
+> **Note:** This is a personal fork with modifications. For the official version, see [polymer-squasher](https://github.com/tomalbrc/polymer-squasher).
 
 Automatic resource pack optimization for Polymer using [PackSquash](https://packsquash.aylas.org/).
 
