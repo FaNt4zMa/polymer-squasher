@@ -59,15 +59,13 @@ public class Util {
             for (Map.Entry<String, PackResource> entry : fileMap) {
                 String relativePath = entry.getKey();
                 if (entry.getValue() == null) {
-                    PolymerSquasher.LOGGER.info("Found empty data for path! {}", entry.getKey());
                     continue;
                 }
 
                 byte[] data = entry.getValue().readAllBytes();
 
                 if (relativePath.isBlank()) {
-                    var s = new String(data);
-                    PolymerSquasher.LOGGER.info("Found empty file path! {}", s);
+                    PolymerSquasher.LOGGER.info("Found empty file path, skipping.");
                     continue;
                 }
 
